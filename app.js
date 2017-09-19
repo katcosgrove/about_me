@@ -42,3 +42,12 @@ if (answer4 === 'y' || answer4 === 'yes'){
 } else {
   alert('Who doesn\'t like movies? Do you hate fun?')
 }
+
+// Question Five
+var answer5 = prompt('Am I afraid of heights?').toLowerCase();
+console.log('Answer to question five was ' + answer5);
+if (answer5 === 'n' || answer5 === 'no'){
+  alert('Correct! At least, not as long as I\'m no more than thirty or so feed above ground or wearing a harness. Bouldering is one of my hobbies.')
+} else {
+  alert('Nope! If I\'m wearing a harness or no more than about thirty feet above ground, heights do not make me uncomfortable at all. Bouldering is one of my hobbies.')
+}

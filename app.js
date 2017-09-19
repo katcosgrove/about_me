@@ -26,10 +26,19 @@ if (answer2 === 'n' || answer2 === 'no'){
 }
 
 //Question Three
-var answer3 = prompt('Have I ever lived in another country?')
+var answer3 = prompt('Have I ever lived in another country?').toLowerCase();
 console.log('Answer to question three was ' + answer3);
 if (answer3 === 'y' || answer3 === 'yes'){
-  alert('You\'re right! I lived in Hungary for a few months earlier this year. Super tired of paprika.')
+  alert('Igen! I lived in Hungary for a few months earlier this year. Super tired of paprika.')
 } else {
   alert('Bocsanat, nem! I lived in Hungary for a few months earlier this year. Super tired of paprika.')
+}
+
+//Question Four
+var answer4 = prompt('Do I like movies?').toLowerCase();
+console.log('Answer to question four was ' + answer4);
+if (answer4 === 'y' || answer4 === 'yes'){
+  alert('Maybe a little too much! I used to work for a large independent video store similar to Scarecrow Video, assigned to the Horror department. I collect digitized copies of rare, out of print films, most of them foreign or within the horror genre.')
+} else {
+  alert('Who doesn\'t like movies? Do you hate fun?')
 }

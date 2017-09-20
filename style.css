@@ -12,16 +12,36 @@ body {
   background-image: url(images/icelandicroad.jpg);
 }
 
-#header {
-  text-align: left;
-  background-color: rgba(255,255,255,0.6);
+#topBar {
+  background-color: rgb(174,174,174);
   padding: 10px;
   position: fixed;
   width: 100%;
 }
 
+#topBar #topNav li {
+  display: inline-block;
+  float: right;
+  padding: 15px 20px 0px 10px;
+}
+
+#topInfo {
+  float: left;
+  text-align: left;
+  width: 40%;
+
+}
+
 #resumeContainer {
-padding-top: 90px;
+padding: 90px 10px 0px 10px;
 width: 40%;
 color: white;
+}
+
+.job {
+  padding: 10px;
+}
+
+.resumeContainer {
+  padding: 10px;
 }

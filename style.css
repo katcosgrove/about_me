@@ -25,6 +25,12 @@ body {
   display: inline-block;
   float: right;
   padding: 15px 20px 0px 10px;
+  /*height: 100%;*/
+}
+
+#topBar #topNav li:hover {
+  background-color: rgb(0,0,0);
+  /*height: 100%;*/
 }
 
 #topInfo {
@@ -36,11 +42,11 @@ body {
 
 #aboutMe {
   padding: 120px 10px 0px 0px;
-  color: gray;
+  color: white;
   text-align: center;
 }
 
-#resumeContainer {
+.mainContainers {
 color: black;
 background-color: white;
 padding: 20px;

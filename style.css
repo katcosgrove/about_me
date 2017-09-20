@@ -13,7 +13,9 @@ body {
 }
 
 #topBar {
-  background-color: rgb(174,174,174);
+  background-color: rgb(20, 69, 99);
+  color: white;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
   padding: 10px;
   position: fixed;
   width: 100%;
@@ -32,16 +34,24 @@ body {
 
 }
 
+#aboutMe {
+  padding: 120px 10px 0px 0px;
+  color: gray;
+  text-align: center;
+}
+
 #resumeContainer {
-padding: 90px 10px 0px 10px;
-width: 40%;
-color: white;
+color: black;
+background-color: white;
+padding: 20px;
+}
+
+.divider {
+  text-align: center;
+  padding: 100px;
+  color: white;
 }
 
 .job {
-  padding: 10px;
-}
-
-.resumeContainer {
   padding: 10px;
 }

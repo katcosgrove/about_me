@@ -1,7 +1,7 @@
 'use strict';
 var score = 0;
 
-//Introduction
+// //Introduction
 var userName = prompt('Excelsior! What is your name?');
 alert('Hi, ' + userName + '! Nice to meet you. See if you can get the correct answer to the following questions about me.');
 
@@ -55,25 +55,28 @@ if (answer5 === 'n' || answer5 === 'no'){
   alert('Nope! If I\'m wearing a harness or less than about thirty feet above ground, heights do not make me uncomfortable at all. Bouldering is one of my hobbies.\nYour score is ' + score + '.');
 }
 
-//Question Six with do while
-
-var answer = 0;
+//Question Six
+var answer6 = 0;
 var attempts = 0;
 do {
-  answer = prompt('How many countries have I visited?');
-  if (answer === 9) {
+  answer6 = parseInt(prompt('How many countries have I visited?'));
+  if (answer6 === 9) {
     score++;
     alert('Correct! Your score is ' + score + '.');
+    console.log('User entered ' + answer6);
     break;
-  } else if (answer < 9) {
-    alert('More than that! Try again. You have ' + (4 - attempts) + ' attempts remaining.');
+  } else if (answer6 < 9) {
+    alert('More than that! Try again.' + attempts );
+    console.log('User entered ' + answer6);
     attempts++;
-  } else if (answer > 9) {
-    alert('Not that many! Try again. You have ' + (4 - attempts) + ' attempts remaining.');
+  } else if (answer6 > 9) {
+    alert('Not that many! Try again.' + attempts );
+    console.log('User entered ' + answer6);
     attempts++;
   }
 }
 while (attempts < 4);
+
 
 //Question Seven
 

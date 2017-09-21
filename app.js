@@ -1,5 +1,5 @@
 'use strict';
-// var score = 0;
+var score = 0;
 
 // // //Introduction
 // // var userName = prompt('Excelsior! What is your name?');
@@ -52,23 +52,41 @@
 //   score++;
 //   alert('Correct! At least, not as long as I\'m no more than thirty or so feed above ground or wearing a harness. Bouldering is one of my hobbies.\nYour score is ' + score + '.');
 // } else {
-//   alert('Nope! If I\'m wearing a harness or no more than about thirty feet above ground, heights do not make me uncomfortable at all. Bouldering is one of my hobbies.\nYour score is ' + score + '.');
+//   alert('Nope! If I\'m wearing a harness or less than about thirty feet above ground, heights do not make me uncomfortable at all. Bouldering is one of my hobbies.\nYour score is ' + score + '.');
 // }
 
-// //Question Six
-var answer = parseInt(prompt('test question'));
-do {
-  var attempts = 0;
-  if (answer === 7) {
-    alert('correct');
-    break;
-  } else if (answer < 7) {
+// //Question Six with do while
+// var answer = parseInt(prompt('How many countries have I visited?'));
+// var attempts = 0;
+// do {
+//   if (answer === 9) {
+//     score++;
+//     alert('Correct! Your score is ' + score + '.');
+//     break;
+//   } else if (answer < 9) {
+//     alert('More than that! Try again.');
+//     attempts++;
+//   } else if (answer > 9); {
+//     alert('Not that many! Try again.');
+//     attempts++;
+//   }
+// }
+// while (attempts < 4);
 
-    alert('too low');
-    attempts++;
-  } else if (answer > 7); {
-    alert('too high');
-    attempts++;
-  }
-}
-while (attempts < 4);
+//Question Six with for loop
+// var answer = parseInt(prompt('How many countries have I visited?'));
+// for (i = 0; i < 3; i++){
+//   if (answer === 9) {
+//     score++;
+//     alert('Correct! Your score is ' + score + '.');
+//     break;
+//   } else if (answer < 9) {
+//     alert('More than that! Try again.');
+//     attempts++;
+//   } else {
+//     alert('Not that many! Try again.');
+//     attempts++;
+//   }
+// }
+
+//Question Seven

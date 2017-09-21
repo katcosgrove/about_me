@@ -1,7 +1,7 @@
 'use strict';
 var score = 0;
 
-// //Introduction
+//Introduction
 var userName = prompt('Excelsior! What is your name?');
 alert('Hi, ' + userName + '! Nice to meet you. See if you can get the correct answer to the following questions about me.');
 
@@ -77,8 +77,23 @@ do {
 }
 while (attempts < 4);
 
-
 //Question Seven
+var answer7 = 0;
+attempts = 0;
+var options = ['louisiana','georgia','mississippi','alabama','kentucky','florida'];
+do {
+  answer7 = prompt('Can you guess a state I have lived in, other than Washington?').toLowerCase();
+  if (answer7 === options[1]) {
+    score++;
+    alert('Correct! Your score is ' + score + '.');
+    console.log('User entered ' + answer7);
+    break;
+  } else (answer7 !== options[1]);
+  alert('Nope! Try again.');
+  console.log('User entered ' + answer7);
+  attempts++;
+}
+while (attempts < 6);
 
 //Congratulations
-alert('Good effort! Your final score is ' + score + '.');
+alert('Good effort, ' + userName + '! Thanks for playing.');

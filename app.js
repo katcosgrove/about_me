@@ -40,7 +40,7 @@ var answer4 = prompt('Do I like movies?').toLowerCase();
 console.log('Answer to question four was ' + answer4);
 if (answer4 === 'y' || answer4 === 'yes'){
   score++;
-  alert('Maybe too much! I used to work for a large independent video store, assigned to the Horror department. I collect digitized copies of rare, out of print films, most of them foreign or within the horror genre.\nYour score is ' + score +'.');
+  alert('Maybe too much! I used to work for a large independent video store, assigned to the Horror department. I collect digitized copies of rare, out of print films, most of them foreign or within the horror genre.\nYour score is ' + score + '.');
 } else {
   alert('Who doesn\'t like movies? Do you hate fun?\nYour score is ' + score + '.');
 }
@@ -90,10 +90,11 @@ do {
     alert('Correct! Your score is ' + score + '.');
     console.log('User entered ' + answer7);
     break;
-  } else (answer7 !== options[1]);
-  alert('Nope! Try again.');
-  console.log('User entered ' + answer7);
-  attempts++;
+  } else {
+    alert('Nope! Try again.');
+    console.log('User entered ' + answer7);
+    attempts++;
+  }
 }
 while (attempts < 6);
 

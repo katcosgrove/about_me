@@ -25,12 +25,11 @@ body {
   display: inline-block;
   float: right;
   padding: 15px 20px 0px 10px;
-  /*height: 100%;*/
 }
 
+/*This is janky and I'm not sure how to fix it*/
 #topBar #topNav li:hover {
   background-color: rgb(0,0,0);
-  /*height: 100%;*/
 }
 
 #topInfo {

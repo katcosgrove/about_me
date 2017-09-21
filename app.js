@@ -4,13 +4,30 @@ var x = 0;
 var questions = ['Do I have any pets?', 'Do I like bananas?', 'Have I ever lived in another country?', 'Do I like movies?', 'Am I afraid of heights?']
 var correct = ['Ding ding ding! You are correct! I have two munchkin cats.', 'Correct! Hate them, with the one exception of a fried peanut butter and banana sandwich.', 'Igen! I lived in Hungary for a few months earlier this year. Super tired of paprika.', 'Maybe too much! I used to work for a large independent video store, assigned to the Horror department. I collect digitized copies of rare, out of print films, most of them foreign or within the horror genre.', 'Correct! At least, not as long as I\'m no more than thirty or so feed above ground or wearing a harness. Bouldering is one of my hobbies.']
 var incorrect = ['BZZZZZT. Wrong! I have two munchkin cats.', 'Sorry! I hate them. I know it\'s weird. :\(', 'Bocsanat, nem! I lived in Hungary for a few months earlier this year. Super tired of paprika.', 'Who doesn\'t like movies? Do you hate fun?', 'Nope! If I\'m wearing a harness or less than about thirty feet above ground, heights do not make me uncomfortable at all. Bouldering is one of my hobbies.']
+var answers = ['true', 'false', 'true', 'true', 'false']
 
 //Introduction
 var userName = prompt('Excelsior! What is your name?');
 alert('Hi, ' + userName + '! Nice to meet you. See if you can get the correct answer to the following questions about me.');
 
+
+//test question
+function functiontest () {
+for (var i = 0; i < questions.length; i++) {
+  var answer1 = prompt(questions[x]).toLowerCase();
+  console.log('Answer to question one was ' + answer1);
+  if (answer1 === answers[x]) {
+    score++;
+    alert(correct[x] + 'Your score is ' + score);
+  } else {
+    alert(incorrect[x] + 'Your score is ' + score);
+  }
+  x++;
+}
+}
+functiontest();
 //Question One
-function questionOne () {
+/*function questionOne () {
 var answer1 = prompt(questions[x]).toLowerCase();
 console.log('Answer to question one was ' + answer1);
 if (answer1 === 'y' || answer1 === 'yes') {
@@ -71,12 +88,8 @@ if (answer5 === 'n' || answer5 === 'no'){
 }
 x++;
 }
+*/
 
-questionOne();
-questionTwo();
-questionThree();
-questionFour();
-questionFive();
 
 //Question Six
 var answer6 = 0;

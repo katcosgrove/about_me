@@ -9,7 +9,7 @@ var answers = ['true', 'false', 'true', 'true', 'false']
 //Introduction
 var userName = prompt('Excelsior! What is your name?');
 alert('Hi, ' + userName + '! Nice to meet you. See if you can get the correct answer to the following questions about me.');
-
+alert('Please answer in true or false!');
 
 //test question
 function functiontest () {

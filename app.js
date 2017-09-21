@@ -66,13 +66,15 @@ do {
     console.log('User entered ' + answer6);
     break;
   } else if (answer6 < 9) {
-    alert('More than that! Try again.' + attempts );
+    alert('More than that! Try again.');
     console.log('User entered ' + answer6);
     attempts++;
   } else if (answer6 > 9) {
-    alert('Not that many! Try again.' + attempts );
+    alert('Not that many! Try again.');
     console.log('User entered ' + answer6);
     attempts++;
+  } if (attempts >= 4) {
+    alert('Sorry, you have run out of attempts. :( Your score remains ' + score + '.');
   }
 }
 while (attempts < 4);

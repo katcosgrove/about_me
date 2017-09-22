@@ -12,6 +12,11 @@ body {
   background-image: url(images/icelandicroad.jpg);
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 #topBar {
   background-color: rgb(20, 69, 99);
   color: white;
@@ -40,7 +45,7 @@ body {
 padding: 5px 0px 10px 15px;
 }
 
-#aboutMe {
+#aboutHeader {
   padding: 120px 10px 0px 0px;
   color: white;
   text-align: center;
